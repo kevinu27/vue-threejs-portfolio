@@ -1,0 +1,46 @@
+# Byte-compiled
+*.py[cod]
+
+# Built documentation
+docs/_build/
+
+#Distribution / packaging
+dist/
+lib/
+*.zip
+
+# Editor directories and files
+.eclipse/
+.idea/
+.vscode
+**/*.iml
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+coverage
+
+# Virtual environment
+venv/
+
+# Instance configuration
+instance/
+
+# Packaged web.
+src/web/*
+
+# Node modules.
+node_modules/
+/npm-debug.log
+/package-lock.json
+webapp/package-lock.json
+/yarn.lock
+/yarn-error.log
+yarn-debug.log*
+/.directory
+
+#others
+static
+configuration
+.DS_Store
