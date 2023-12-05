@@ -1,15 +1,27 @@
 <script setup>
 import { ref } from 'vue'
+import * as THREE from 'three'
+import {Scene}  from 'three'
+import { WebGLRenderer } from 'three';
+import { PerspectiveCamera } from 'three';
+// console.log('Scene', Scene )
+// const scene = new Scene()
+// const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000)
+// scene.add(camera)
 
-defineProps({
-  msg: String,
-})
-
-const count = ref(0)
+// const renderer = new WebGLRenderer({
+//   canvas: document.querySelector('#canvas')
+// }
+// )
+// renderer.setSize(window.innerWidth, window.innerHeight)
+// const count = ref(0)
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <p>hello</p>
+
+  <canvas ref="referience"/>
+  <!-- <h1>{{ msg }}</h1>
 
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
@@ -30,7 +42,7 @@ const count = ref(0)
     <a href="https://github.com/vuejs/language-tools" target="_blank">Volar</a>
     in your IDE for a better DX
   </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p> -->
 </template>
 
 <style scoped>
