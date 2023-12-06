@@ -5,6 +5,7 @@ import { createRenderer } from "./systems/renderer.js";
 import { Loop } from "./systems/Loop.js";
 import { Resizer } from "./systems/Resizer.js"
 import { createTerrain } from "./Components/objects/plane"
+import { createControls } from "./systems/controls.js"
  
 // These variables are module-scoped: we cannot access them
 // from outside the module.
@@ -22,6 +23,7 @@ class World {
       // Initialize Loop
      loop = new Loop(camera, scene, renderer);
       container.append(renderer.domElement);
+      const controls = createControls(camera, renderer.domElement)
       // Light Instance, with optional light helper
      const { light, lightHelper } = createLights("white");
       loop.updatables.push(light);
